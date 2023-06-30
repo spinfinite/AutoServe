@@ -1,0 +1,20 @@
+header {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: rgb(83, 225, 142);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    color: black;
+    font-size: xxx-large;
+}

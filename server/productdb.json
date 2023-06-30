@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "title": "One Year Service Contract",
+        "Oil Changes": "Two per year up to $120 per oil change",
+        "Brake Pads": "One use per Agreement year up to $150",
+        "Battery": "One use per Agreement year up to $135",
+        "Cooling System": "Drain/refill/Flush $50 max per year",
+        "Tire Rotation": "Up to $30 pay per year",
+        "Wiper Blade": "Up to $30 pay per year",
+        "Alignment": "Up to $30 pay per year",
+        "Price": 399.00
+    },
+    {
+        "id": 2,
+        "title": "Two Year Service Contract",
+        "Oil Changes": "Two per year up to $120 per oil change",
+        "Brake Pads": "One use per Agreement year up to $150",
+        "Battery": "One use per Agreement year up to $135",
+        "Cooling System": "Drain/refill/Flush $50 max per year",
+        "Tire Rotation": "Up to $30 pay per year",
+        "Wiper Blade": "Up to $30 pay per year",
+        "Alignment": "Up to $30 pay per year",
+        "Price": 449.00
+    },
+    {
+        "id": 3,
+        "title": "Three Year Service Contract",
+        "Oil Changes": "Two per year up to $120 per oil change",
+        "Brake Pads": "One use per Agreement year up to $150",
+        "Battery": "One use per Agreement year up to $135",
+        "Cooling System": "Drain/refill/Flush $50 max per year",
+        "Tire Rotation": "Up to $30 pay per year",
+        "Wiper Blade": "Up to $30 pay per year",
+        "Alignment": "Up to $30 pay per year",
+        "Price": 549.00
+    },
+    {
+        "id": 4,
+        "title": "Four Year Service Contract",
+        "Oil Changes": "Two per year up to $120 per oil change",
+        "Brake Pads": "One use per Agreement year up to $150",
+        "Battery": "One use per Agreement year up to $135",
+        "Cooling System": "Drain/refill/Flush $50 max per year",
+        "Tire Rotation": "Up to $30 pay per year",
+        "Wiper Blade": "Up to $30 pay per year",
+        "Alignment": "Up to $30 pay per year",
+        "Price": 599.00
+    },
+    {
+        "id": 5,
+        "title": "Five Year Service Contract",
+        "Oil Changes": "Two per year up to $120 per oil change",
+        "Brake Pads": "One use per Agreement year up to $150",
+        "Battery": "One use per Agreement year up to $135",
+        "Cooling System": "Drain/refill/Flush $50 max per year",
+        "Tire Rotation": "Up to $30 pay per year",
+        "Wiper Blade": "Up to $30 pay per year",
+        "Alignment": "Up to $30 pay per year",
+        "Price": 699.00
+    },
+    {
+        "id": 6,
+        "title": "Six Year Service Contract",
+        "Oil Changes": "Two per year up to $120 per oil change",
+        "Brake Pads": "One use per Agreement year up to $150",
+        "Battery": "One use per Agreement year up to $135",
+        "Cooling System": "Drain/refill/Flush $50 max per year",
+        "Tire Rotation": "Up to $30 pay per year",
+        "Wiper Blade": "Up to $30 pay per year",
+        "Alignment": "Up to $30 pay per year",
+        "Price": 799.00
+    }
+
+]
