@@ -14,32 +14,26 @@
         <h1>AutoServe</h1>
         <img src="./images/vehicleFixed-100.png" alt="fixed">
     </header>
-    <label for="">"Let's get your vehicle information:"</label>
-    <br>
-    <br>
-    <label for="">"Make:"</label>
-    <select name="make" id="vehicleMake">
-        
-    </select>
-    <br>
-    <br>
-    <label for="">"Model:"</label>
-    <select name="model" id="vehicleModel">
-        <option value="accord">Accord</option>
-        <option value="rav4">Rav4</option>
-        <option value="f150">F-150</option>
-        <option value="traverse">Traverse</option>
-    </select>
-    <br>
-    <br>
-    <label for="">"Year:"</label>
-    <select name="year" id="vehicleYear">
-        <option value="2024">2024</option>
-        <option value="2023">2023</option>
-        <option value="2022">2022</option>
-        <option value="2021">2021</option>
-    </select>
+        <form>
+            <label for="">"Let's get your vehicle information:"</label>
+            <br>
+            <br>
+            <label for="">"Make:"</label>
+            <select name="make" id="vehicleMake" required>  
+            </select>
 
+            <br>
+            <br>
+            <label for="">"Model:"</label>
+            <select name="model" id="vehicleModel" required>
+            </select>
+
+            <br>
+            <br>
+            <label for="">"Year:"</label>
+            <select name="date" id="dateDropdown" required>
+            </select>
+        </form>
 
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
