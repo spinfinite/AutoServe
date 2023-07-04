@@ -1,9 +1,16 @@
-const makeSelect = document.querySelector('select')
+const productsContainer = document.querySelector('#products-container')
+const makeSelect = document.querySelector('#vehicleMake')
 const modelSelect = document.querySelector('#vehicleModel')
 const yearSelect = document.querySelector('#dateDropdown')
 const displayInfo = document.querySelector('#results')
 const displayButton = document.querySelector('#submit')
-const displayProducts = document.querySelector('#submit')
+const displayProduct = document.querySelector('#submit')
+
+const baseURL = `http://localhost:4000/api/products`
+const productsCallback = ({data: products}) => displayProducts(products)
+const errCallback = err => console.log(err.response.data)
+
+const getProducts = () => axios.get(baseURL).then(productsCallback).catch(errCallback)
 
 // Get all Makes using the Makes API
 const getMake = () => {
@@ -24,11 +31,11 @@ const getMake = () => {
 }
 
 // Get models based on the Makes and use the models API
-const getModel = evt => {
+const getModel = (evt) => {
     modelSelect.innerHTML=""
     axios.get(`https://vpic.nhtsa.dot.gov/api/vehicles/GetModelsForMake/${evt.target.value}?format=json`)
         .then(response => {
-            console.log(response.data)
+            console.log(response.data.Results)
             let { Results } = response.data
             Results.forEach(vehicleObj => {
                 let option = document.createElement('option')
@@ -69,25 +76,58 @@ const getResults = (evt) => {
      <p> Make:  ${makeSelect.value}  </p>
      <p> Model: ${modelSelect.value} </p>
      <p> Year:  ${yearSelect.value}  </p>
+
+     
+     
     `
 }
 
-const getProducts = (evt) => {
-    evt.preventDefault()
-    displayProducts.innerHTML=
+// const getProducts = () => {
+//     axios.get(baseURL)
+//     .then(productsCallback)
+
+       
+//     })
+
+// }
+
+function createProductCard(products) {
+    const productCard = document.createElement('div')
+    productCard.classList.add('product-card')
+
+    productCard.innerHTML = 
     `
-    
-    
+    <div>
+    <p> ID: ${products.id} </p>
+    <p> Title: ${products.title} </p>
+    <p> OilChanges: ${products.OilChanges} </p>
+    <p> BrakePads: ${products.BrakePads} </p>
+    <p> Battery: ${products.Battery} </p>
+    <p> CoolingSystem: ${products.CoolingSystem} </p>
+    <p> TireRotation: ${products.TireRotation} </p>
+    <p> WiperBlade: ${products.WiperBlade} </p>
+    <p> Alignment: ${products.Alignment} </p>
+    <p> Price: ${products.Price} </p>
+    </div>
     `
+
+    productsContainer.appendChild(productCard)
 
 }
 
-// getAllProducts.addEventListener('click', getResults)
-// for (let i = 0; i < )
+function displayProducts(arr) {
+    productsContainer.innerHTML = ``
+    for (let i = 0; i < arr.lentgh; i++) {
+        createProductCard(arr[i])
+    }
+    
+}
 
-displayButton.addEventListener("click", getResults)
+
 getMake()
 makeSelect.addEventListener("change", getModel)
 getYear()
+displayButton.addEventListener("click", getResults)
+displayProduct.addEventListener("change",getProducts)
 
 
