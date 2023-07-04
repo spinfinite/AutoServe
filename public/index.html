@@ -10,33 +10,48 @@
 </head>
 <body>
     <header>
-        <img src="./images/vehicleFix-100.png" alt="tofix">
+        <img src="./images/vehicleFix-100.png" alt="tofix" id="tobe-fixed-logo">
         <h1>AutoServe</h1>
-        <img src="./images/vehicleFixed-100.png" alt="fixed">
+        <img src="./images/vehicleFixed-100.png" alt="fixed" id="fixed-logo">
     </header>
-        <form>
-            <label for="">"Let's get your vehicle information:"</label>
-            <br>
-            <br>
-            <label for="">"Make:"</label>
-            <select name="make" id="vehicleMake" required>  
-            </select>
+        <main>
+            <form id="results">
+                <label for="">You came to be protected, Let's get your vehicle information:</label>
+                <br>
+                <br>
+                <label for="">Make:</label>
+                <select name="make" id="vehicleMake" required>  
+                </select>
 
-            <br>
-            <br>
-            <label for="">"Model:"</label>
-            <select name="model" id="vehicleModel" required>
-            </select>
+                <br>
+                <br>
+                <label for="">Model:</label>
+                <select name="model" id="vehicleModel" required>
+                </select>
 
-            <br>
-            <br>
-            <label for="">"Year:"</label>
-            <select name="date" id="dateDropdown" required>
-            </select>
-        </form>
+                <br>
+                <br>
+                <label for="">Year:</label>
+                <select name="date" id="dateDropdown" required>
+                </select>
+                <br>
+                <br>
+                <button type= "submit" id="submit">Submit</button>
+                <br>
+                <br>
+            </form>
+            <!-- <div id="results">
 
 
+            </div> -->
+            
+        </main>
+
+
+        <footer>About Us:</footer>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./main.js"></script>
 </body>
+
+
 </html>
