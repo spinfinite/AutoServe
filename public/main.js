@@ -51,7 +51,7 @@ const getModel = (evt) => {
 }
 // Get the year of the vehicle and ensure that it does not go below 1981
 const getYear = () => {
-    //yearSelect.innerHTML=""
+    //Earliest year is 1981 to be used. 
     let currentYear = new Date().getFullYear()
     console.log(currentYear)
     let earliestYear = 1981
@@ -61,7 +61,6 @@ const getYear = () => {
         let option = document.createElement('option')
         option.text = currentYear
         option.value = currentYear
-        //yearSelect.add(option)
         yearSelect.appendChild(option)
         currentYear -= 1 
     }
@@ -71,43 +70,40 @@ const getYear = () => {
 const getResults = (evt) => {
     evt.preventDefault()
     displayInfo.innerHTML=
-    `<p> Below are the products available based on the vehicle provided: </p>
-    <br>
-     <p> Make:  ${makeSelect.value}  </p>
-     <p> Model: ${modelSelect.value} </p>
-     <p> Year:  ${yearSelect.value}  </p>
-
+    `
+    <div>
+        <p> Below are the products available based on the vehicle provided: </p>
+        <br>
+        <p> Make:  ${makeSelect.value}  </p>
+        <p> Model: ${modelSelect.value} </p>
+        <p> Year:  ${yearSelect.value}  </p>
+    </div>
      
      
     `
 }
 
-// const getProducts = () => {
-//     axios.get(baseURL)
-//     .then(productsCallback)
-
-       
-//     })
-
-// }
-
-function createProductCard(products) {
+function createProductCard(product) {
+    //console.log(product)
     const productCard = document.createElement('div')
+    console.log(productCard)
     productCard.classList.add('product-card')
 
     productCard.innerHTML = 
     `
     <div>
-    <p> ID: ${products.id} </p>
-    <p> Title: ${products.title} </p>
-    <p> OilChanges: ${products.OilChanges} </p>
-    <p> BrakePads: ${products.BrakePads} </p>
-    <p> Battery: ${products.Battery} </p>
-    <p> CoolingSystem: ${products.CoolingSystem} </p>
-    <p> TireRotation: ${products.TireRotation} </p>
-    <p> WiperBlade: ${products.WiperBlade} </p>
-    <p> Alignment: ${products.Alignment} </p>
-    <p> Price: ${products.Price} </p>
+        <button>
+            <p> ID: ${product.id} </p>
+            <p> Title: ${product.title} </p>
+            <p> OilChanges: ${product.OilChanges} </p>
+            <p> BrakePads: ${product.BrakePads} </p>
+            <p> Battery: ${product.Battery} </p>
+            <p> CoolingSystem: ${product.CoolingSystem} </p>
+            <p> TireRotation: ${product.TireRotation} </p>
+            <p> WiperBlade: ${product.WiperBlade} </p>
+            <p> Alignment: ${product.Alignment} </p>
+            <p> Price: ${product.Price} </p>
+        </button>
     </div>
     `
 
@@ -116,9 +112,12 @@ function createProductCard(products) {
 }
 
 function displayProducts(arr) {
+    console.log(arr)
     productsContainer.innerHTML = ``
-    for (let i = 0; i < arr.lentgh; i++) {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
         createProductCard(arr[i])
+        
     }
     
 }
@@ -128,6 +127,6 @@ getMake()
 makeSelect.addEventListener("change", getModel)
 getYear()
 displayButton.addEventListener("click", getResults)
-displayProduct.addEventListener("change",getProducts)
+displayProduct.addEventListener("click",getProducts)
 
 
