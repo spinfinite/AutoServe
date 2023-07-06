@@ -7,24 +7,29 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background-color: rgb(89, 252, 157);
     z-index: 1;
 }
 
-img {
-    width: 100px;
-    height: 100px;
+article {
+    height: 23.438vw;
+    background-size: cover;  
+    background-image: url("./images/pilot.png");
+    background-position: 100%;
+
 }
+
 
 h1 {
     color: black;
     font-size: 4em;
+    image
 }
 
 h2 {
     color: black;
     font-size: 2em;
 }
+
 h3 {
     color: black;
     font-size: 2em;
@@ -86,20 +91,20 @@ button:hover {
 footer {
     position: flex;
     bottom: 0;
-    height: 40px;
+    height: 60px;
     width: 100%;
 
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background-color: rgb(83, 225, 142);
+    background-color: rgb(168, 180, 173);
     
 }
 
 #results {
     width: 70%;
     height: 350px;
-    background-color: rgb(83, 225, 142);
+    background-color: rgb(230, 239, 234);
     position: relative;
     display: flex; 
     flex-direction: column;
@@ -114,11 +119,12 @@ footer {
     display: flex;
     align-items:center;
     justify-content: space-between;
-    border: 2px solid green;
+    border: 2px solid rgb(216, 231, 216);
     overflow-x: auto;
     border-radius: 12px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    
 }
 .cover {
     position: relative;
@@ -145,9 +151,12 @@ footer {
     border: 1px solid white;
     overflow: hidden;
 }
-.child-button {
-    width: 100%;
-    height: 100%;
+img {
+    width: 100px;
+    height: 100px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
 }
 
 .scroll-buttons::-webkit-scrollbar {
