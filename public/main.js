@@ -6,7 +6,7 @@ const displayInfo = document.querySelector('#results')
 const displayButton = document.querySelector('#submit')
 const displayProduct = document.querySelector('#submit')
 
-const baseURL = `http://localhost:4000/api/products`
+const baseURL = `/api/products`
 const productsCallback = ({data: products}) => displayProducts(products)
 const errCallback = err => console.log(err.response.data)
 
