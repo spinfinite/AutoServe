@@ -57,7 +57,6 @@ const getYear = () => {
     let earliestYear = 1981
 
     while (currentYear >= earliestYear) {
-        //console.log(option)
         let option = document.createElement('option')
         option.text = currentYear
         option.value = currentYear
