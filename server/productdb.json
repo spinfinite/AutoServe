@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "imageURL": "./images/1yearIcon.png",
         "title": "One Year Service Contract",
         "OilChanges": "Two per year up to $120 per oil change",
         "BrakePads": "One use per Agreement year up to $150",
@@ -13,6 +14,7 @@
     },
     {
         "id": 2,
+        "imageURL": "./images/2yearIcon.png",
         "title": "Two Year Service Contract",
         "OilChanges": "Two per year up to $120 per oil change",
         "BrakePads": "One use per Agreement year up to $150",
@@ -25,6 +27,7 @@
     },
     {
         "id": 3,
+        "imageURL": "./images/3yearIcon.png",
         "title": "Three Year Service Contract",
         "OilChanges": "Two per year up to $120 per oil change",
         "BrakePads": "One use per Agreement year up to $150",
@@ -37,6 +40,7 @@
     },
     {
         "id": 4,
+        "imageURL": "./images/4yearIcon.png",
         "title": "Four Year Service Contract",
         "OilChanges": "Two per year up to $120 per oil change",
         "BrakePads": "One use per Agreement year up to $150",
@@ -49,6 +53,7 @@
     },
     {
         "id": 5,
+        "imageURL": "./images/5yearIcon.png",
         "title": "Five Year Service Contract",
         "OilChanges": "Two per year up to $120 per oil change",
         "BrakePads": "One use per Agreement year up to $150",
@@ -61,6 +66,7 @@
     },
     {
         "id": 6,
+        "imageURL": "./images/6yearIcon.png",
         "title": "Six Year Service Contract",
         "OilChanges": "Two per year up to $120 per oil change",
         "BrakePads": "One use per Agreement year up to $150",

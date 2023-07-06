@@ -71,12 +71,20 @@ const getResults = (evt) => {
     evt.preventDefault()
     displayInfo.innerHTML=
     `
-    <div>
+    <div class=item>
+        <h2>Products</h2>
         <p> Below are the products available based on the vehicle provided: </p>
         <br>
         <p> Make:  ${makeSelect.value}  </p>
         <p> Model: ${modelSelect.value} </p>
         <p> Year:  ${yearSelect.value}  </p>
+        <br>
+        <h3>All terms include:</h3>
+        <br>
+        <p> Tire Rotation: Up to $30 pay per year </p>
+        <p> Wiper Blade: Up to $30 pay per year </p>
+        <p> Alignment: Up to $30 pay per year </p>
+
     </div>
      
      
@@ -92,19 +100,25 @@ function createProductCard(product) {
     productCard.innerHTML = 
     `
     <div>
-        <button>
-            <p> ID: ${product.id} </p>
-            <p> Title: ${product.title} </p>
+
+        <button onclick="chooseProduct(${product.id})">
+            <img imageURL: src=${product.imageURL}></img>
+            <p> Term: ${product.title} </p>
             <p> OilChanges: ${product.OilChanges} </p>
             <p> BrakePads: ${product.BrakePads} </p>
             <p> Battery: ${product.Battery} </p>
             <p> CoolingSystem: ${product.CoolingSystem} </p>
-            <p> TireRotation: ${product.TireRotation} </p>
-            <p> WiperBlade: ${product.WiperBlade} </p>
-            <p> Alignment: ${product.Alignment} </p>
             <p> Price: ${product.Price} </p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="AMNDK3HZUGLCG" />
+                <input type="hidden" name="currency_code" value="USD" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Add to Cart" />
+            </form>
         </button>
+
     </div>
+    <br>
     `
 
     productsContainer.appendChild(productCard)

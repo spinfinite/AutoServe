@@ -2,11 +2,13 @@ header {
     position: sticky;
     top: 0;
     height: 100px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
-    background-color: rgb(83, 225, 142);
+    padding: 5px;
+    background-color: rgb(89, 252, 157);
+    z-index: 1;
 }
 
 img {
@@ -17,6 +19,15 @@ img {
 h1 {
     color: black;
     font-size: 4em;
+}
+
+h2 {
+    color: black;
+    font-size: 2em;
+}
+h3 {
+    color: black;
+    font-size: 2em;
 }
 
 /* To target an id we use the pound symbol.  To target a class we use a period.  */
@@ -33,18 +44,13 @@ main {
     align-items: center;
     min-height: calc(100vh -120px);
 }
-footer {
-    height: 20px;
-    background-color:rgb(83, 225, 142);
-    color: black;
-    font-weight: 1000px;
-    text-align: center;
-}
+
 
 button {
     padding: 5px;
-    background-color: rgb(83, 225, 142);
-    color: white;
+    background-color: rgb(216, 247, 229);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
 
 }
 
@@ -59,30 +65,101 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 
 }
 
 .product-card {
-    background-color: rgb(64, 224, 67);
-    width: 300px;
-    margin: 40px; 
+    
+    width: 400px;
+    margin: 10px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 12px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-
-
 }
 
 footer {
-    position: sticky;
-    top: 0;
-    height: 50px;
-    display: flex;
+    position: flex;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 5px;
     background-color: rgb(83, 225, 142);
+    
 }
+
+#results {
+    width: 70%;
+    height: 350px;
+    background-color: rgb(83, 225, 142);
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin: 30px;
+}
+
+.main-scroll-div {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border: 2px solid green;
+    overflow-x: auto;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.cover {
+    position: relative;
+    width: 90%;
+    height: 50%;
+}
+
+.scroll-buttons {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.child {
+    min-width: 600px;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    overflow: hidden;
+}
+.child-button {
+    width: 100%;
+    height: 100%;
+}
+
+.scroll-buttons::-webkit-scrollbar {
+    width: 0;
+}
+
+.item{
+
+    text-align: center;
+    margin-right: 2px;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
