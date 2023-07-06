@@ -81,6 +81,8 @@ button:hover {
 #products-container {
     display: flex;
     flex-wrap: wrap;
+    font-family: sans-serif;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
@@ -117,6 +119,8 @@ footer {
 #results {
     width: 70%;
     height: 550px;
+    font-family: sans-serif;
+    font-weight:bold;
     background-color: rgb(234, 248, 240);
     position: relative;
     display: flex; 

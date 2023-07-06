@@ -94,7 +94,6 @@ const getResults = (evt) => {
 }
 
 function createProductCard(product) {
-    //console.log(product)
     const productCard = document.createElement('div')
     console.log(productCard)
     productCard.classList.add('product-card')
@@ -115,6 +114,7 @@ function createProductCard(product) {
             <img imageURL: src="./images/cooling.svg"></img>
             <p> CoolingSystem: ${product.CoolingSystem} </p>
             <p> Price: ${product.Price} </p>
+            <br>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                 <input type="hidden" name="cmd" value="_s-xclick" />
                 <input type="hidden" name="hosted_button_id" value="AMNDK3HZUGLCG" />
