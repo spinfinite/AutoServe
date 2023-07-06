@@ -8,6 +8,8 @@ header {
     align-items: center;
     padding: 5px;
     z-index: 1;
+    margin: 0 auto;
+    background-color: white;
 }
 
 article {
@@ -22,7 +24,6 @@ article {
 h1 {
     color: black;
     font-size: 4em;
-    image
 }
 
 h2 {
@@ -42,6 +43,18 @@ h3 {
 }
 #fixed-logo{
     width: 100px;
+    padding-right: 50px;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+
+}
+
+#main_logo {
+    width: 200px;
+
 }
 main {
     display: flex;
@@ -53,7 +66,7 @@ main {
 
 button {
     padding: 5px;
-    background-color: rgb(216, 247, 229);
+    background-color: rgb(235, 249, 241);
     color: rgb(0, 0, 0);
     border-radius: 10px;
 
@@ -61,7 +74,7 @@ button {
 
 button:hover {
     cursor: pointer;
-    background-color: rgb(132, 179, 151);
+    background-color: rgb(97, 103, 99);
     color: white;
 }
 
@@ -91,20 +104,20 @@ button:hover {
 footer {
     position: flex;
     bottom: 0;
-    height: 60px;
+    height: 100px;
     width: 100%;
-
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background-color: rgb(168, 180, 173);
+    background-color: rgb(235, 243, 238);
     
 }
 
 #results {
     width: 70%;
-    height: 350px;
-    background-color: rgb(230, 239, 234);
+    height: 550px;
+    background-color: rgb(234, 248, 240);
     position: relative;
     display: flex; 
     flex-direction: column;
@@ -171,4 +184,11 @@ img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
+#hours {
+    width: 250px;
+
+}
+
+
 

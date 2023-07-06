@@ -81,8 +81,11 @@ const getResults = (evt) => {
         <br>
         <h3>All terms include:</h3>
         <br>
+        <img imageURL: src="./images/tire_rotation.svg"</img>
         <p> Tire Rotation: Up to $30 pay per year </p>
+        <img imageURL: src="./images/wiper_blades.svg"</img>
         <p> Wiper Blade: Up to $30 pay per year </p>
+        <img imageURL: src="./images/alignment.svg"</img>
         <p> Alignment: Up to $30 pay per year </p>
 
     </div>
@@ -104,9 +107,13 @@ function createProductCard(product) {
         <button onclick="chooseProduct(${product.id})">
             <img imageURL: src=${product.imageURL}></img>
             <p> Term: ${product.title} </p>
+            <img imageURL: src="./images/oil_changes.svg"></img>
             <p> OilChanges: ${product.OilChanges} </p>
+            <img imageURL: src="./images/break_pads.svg"></img>
             <p> BrakePads: ${product.BrakePads} </p>
+            <img imageURL: src="./images/battery.svg"></img>
             <p> Battery: ${product.Battery} </p>
+            <img imageURL: src="./images/cooling.svg"></img>
             <p> CoolingSystem: ${product.CoolingSystem} </p>
             <p> Price: ${product.Price} </p>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
