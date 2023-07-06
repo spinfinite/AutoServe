@@ -106,13 +106,13 @@ function createProductCard(product) {
             <img imageURL: src=${product.imageURL}></img>
             <p> Term: ${product.title} </p>
             <img imageURL: src="./images/oil_changes.svg"></img>
-            <p> OilChanges: ${product.OilChanges} </p>
+            <p> Oil Changes: ${product.OilChanges} </p>
             <img imageURL: src="./images/break_pads.svg"></img>
-            <p> BrakePads: ${product.BrakePads} </p>
+            <p> Brake Pads: ${product.BrakePads} </p>
             <img imageURL: src="./images/battery.svg"></img>
             <p> Battery: ${product.Battery} </p>
             <img imageURL: src="./images/cooling.svg"></img>
-            <p> CoolingSystem: ${product.CoolingSystem} </p>
+            <p> Cooling System: ${product.CoolingSystem} </p>
             <p> Price: ${product.Price} </p>
             <br>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
